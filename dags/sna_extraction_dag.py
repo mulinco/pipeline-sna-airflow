@@ -1,7 +1,7 @@
 from airflow.models.dag import DAG
 from airflow.operators.bash import BashOperator
 import pendulum
-
+# Forçando o primeiro deploy
 with DAG(
     dag_id="sna_extraction_pipeline",
     start_date=pendulum.datetime(2025, 8, 27, tz="America/Sao_Paulo"),
